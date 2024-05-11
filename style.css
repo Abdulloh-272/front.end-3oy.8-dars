@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #202c36;
+}
+
+.btn-1 {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+/* Header styles  */
+
+header {
+  background: #2b3844;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left h2 {
+  color: white;
+}
+
+/* Hero styles  */
+
+.hero {
+  padding-top: 150px;
+}
+
+.hero-input {
+  display: flex;
+  gap: 20px;
+  padding: 20px 10px;
+  background-color: #2b3844;
+  width: 480px;
+
+  border-radius: 10px;
+}
+
+.hero-input input {
+  background-color: transparent;
+  border: none;
+}
+
+.hero-input input::placeholder {
+  color: white;
+}
+
+.hero2 {
+  margin-top: 60px;
+}
+
+.country h2 {
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.country p {
+  color: white;
+  margin-top: 10px;
+}
+
+.flag img {
+  width: 100%;
+}
+
+.flags {
+  height: 360px;
+  width: 264px;
+  background-color: #2b3844;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.flags-parent {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.country {
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 776px) {
+  .flags-parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-input {
+    width: 100%;
+  }
+  .hero-input input {
+    width: 100%;
+  }
+
+  .header-left h2 {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width:421px) {
+  .container {
+    padding: 0 30px;
+  }
+}
